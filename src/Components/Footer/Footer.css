@@ -1,0 +1,17 @@
+.footer-container {
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.social-Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+.icon {
+  font-size: 50px;
+  margin-bottom: 25px;
+}

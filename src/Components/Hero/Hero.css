@@ -1,0 +1,82 @@
+/* Hero.css */
+
+.Hero-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  width: 13%;
+  height: 13%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.txt-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-head {
+  font-size: 34px;
+  font-weight: bold;
+  background-image: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text {
+  color: white;
+}
+.txt-span {
+  margin-top: 15px;
+}
+
+.btn-div {
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+}
+.primary-btn {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 900;
+  color: white;
+}
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+.secondary-btn {
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.secondary-btn:hover {
+  border-color: #b923e1;
+  transform: scale(1.05);
+}
+/* #cursor-shadow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(202, 3, 202, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 20px 10px purple;
+} */

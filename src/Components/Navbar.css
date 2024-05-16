@@ -1,0 +1,40 @@
+.Navbar-Conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+}
+
+.logo {
+  font-size: xx-large;
+  font-weight: 800;
+  border-bottom: 5px solid #f822bc;
+}
+.Nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+}
+.nav-listItem {
+  font-weight: bold;
+}
+.nav-btn {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  color: white;
+  font-weight: bold;
+  margin-right: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+.Anchor-Link {
+  text-decoration: none;
+  color: white;
+}
