@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { LinkedIn, Facebook, Mail } from "@material-ui/icons";
+import { LinkedIn, Facebook, Mail, ArrowUpward } from "@material-ui/icons";
 
 const Footer = () => {
   return (

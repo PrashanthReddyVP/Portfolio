@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Menu, Close } from "@material-ui/icons";
 
 const Navbar = () => {
-  const [Menu, SetMenu] = useState("Home");
+  const MenuRef = useRef();
+
+  const OpenMenu = () => {
+    MenuRef.current.style.right = "0";
+  };
+  const CloseMenu = () => {
+    MenuRef.current.style.right = "-350px";
+  };
   return (
     <div className="Navbar-Conatiner">
       <span className="logo">Prashanth</span>
-      <ul className="Nav-list">
+      <p className="nav-open" onClick={OpenMenu}>
+        <Menu />
+      </p>
+      <ul ref={MenuRef} className="Nav-list">
+        <p className="nav-close" onClick={CloseMenu}>
+          <Close />
+        </p>
+
         <li className="nav-listItem">
           <AnchorLink className="Anchor-Link" href="#home">
             {" "}
@@ -27,7 +42,9 @@ const Navbar = () => {
           </AnchorLink>
         </li>
       </ul>
-      <button className="nav-btn">Connect Withme</button>
+      <AnchorLink className="Anchor-Link" offset={50} href="#contact">
+        <button className="nav-btn">Connect Withme</button>
+      </AnchorLink>
     </div>
   );
 };

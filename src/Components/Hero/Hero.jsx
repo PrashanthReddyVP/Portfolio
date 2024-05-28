@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Hero.css";
 import prashanth from "../../assets/prashanthProfile.jpg";
 import prashanthResume from "../../assets/prashanth_frontend 1.pdf";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   useEffect(() => {
@@ -49,7 +50,9 @@ const Hero = () => {
         </span>
       </div>
       <div className="btn-div">
-        <button className="primary-btn">Connect Withme</button>
+        <AnchorLink className="Anchor-Link" offset={50} href="#contact">
+          <button className="primary-btn">Connect Withme</button>
+        </AnchorLink>
         <button className="secondary-btn" onClick={handleDownloadResume}>
           My Resume
         </button>

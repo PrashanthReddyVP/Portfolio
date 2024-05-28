@@ -34,7 +34,52 @@
 .nav-btn:hover {
   transform: scale(1.05);
 }
+.nav-open {
+  display: none;
+}
 .Anchor-Link {
   text-decoration: none;
   color: white;
+}
+.nav-close {
+  display: none;
+}
+@media (max-width: 768px) {
+  .Navbar-Conatiner {
+    margin: 20px 50px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .nav-close {
+    display: block;
+    position: relative;
+    top: 30x;
+    left: 290px;
+    width: 30px;
+  }
+  .Nav-list {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+  .nav-listItem {
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
 }

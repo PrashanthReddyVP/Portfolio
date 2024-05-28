@@ -1,8 +1,11 @@
 import React from "react";
 import "./Contact.css";
-import { Mail, Phone, LocationOn } from "@material-ui/icons";
+import { Mail, Phone, LocationOn, ArrowUpward } from "@material-ui/icons";
 
 const Contact = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div id="contact" className="contact-container">
       <div className="contact-title">
@@ -47,6 +50,9 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <button className="scroll-to-top" onClick={scrollToTop}>
+        <ArrowUpward style={{ color: "white" }} />
+      </button>
     </div>
   );
 };
